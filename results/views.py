@@ -5,3 +5,8 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("<h1> results page </h1>")
+
+
+def responseNumber(request, task_id):
+    print(task_id)
+    return HttpResponse("<h1> results page with numbers</h1>")
